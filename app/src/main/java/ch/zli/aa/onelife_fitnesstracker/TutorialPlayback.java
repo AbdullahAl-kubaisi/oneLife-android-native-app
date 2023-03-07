@@ -12,11 +12,11 @@ import org.parceler.Parcels;
 
 import java.text.SimpleDateFormat;
 
-import ch.zli.onelife_v1.models_tutorials.VideoYT;
+import ch.zli.aa.onelife_fitnesstracker.models_tutorials.VideoYT;
+
 
 public class TutorialPlayback extends YouTubeBaseActivity {
 
-    //private final String YOUTUBE_API = getString(R.string.YOUTUBE_API);
     YouTubePlayerView youTubePlayerView;
     TextView tvTitle, tvDescription, tvPublishedAt;
 
@@ -39,34 +39,13 @@ public class TutorialPlayback extends YouTubeBaseActivity {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("M/dd/yyyy");
         String simpleDateFormatString = simpleDateFormat.format(published);
 
-        /*
-        * long epochMillis = videoYT.getSnippet().getPublishedAt();
-        * ZonedDateTime zonedDateTime = ZonedDateTime.ofInstant(Instant.ofEpochMilli(epochMillis), ZoneId.systemDefault());
-        * String date = zonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        * simpleDateFormat.format(DateTimeFormatter.ofPattern(""));
-        */
-
-        //String title = getIntent().getStringExtra("title");
-        //String description = getIntent().getStringExtra("description");
-        //String video_url = getIntent().getStringExtra("video_url");
 
         youTubePlayerView.initialize(getString(R.string.YOUTUBE_API), new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
 
                 youTubePlayer.loadVideo(video_url);
-             /* int orientation = getResources().getConfiguration().orientation;
-                if(orientation == Configuration.ORIENTATION_PORTRAIT) {
-                    youTubePlayer.loadVideo(video_url);
-                } else if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                    youTubePlayer.setFullscreen(true);
-                    youTubePlayer.loadVideo(video_url);
-                    youTubePlayer.setFullscreen(true);
-                } else {
-                    youTubePlayer.loadVideo(video_url);
-                }
-                //youTubePlayer.setFullscreen(true);*/
-            }
+
 
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
