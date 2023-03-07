@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">OneLife-FitnessTracker</string>
+    <string name="x_achse">X-Achse</string>
+    <string name="y_achse">Y-Achse</string>
+    <string name="z_achse">Z-Achse</string>
+    <string name="no_value">-</string>
 </resources>
