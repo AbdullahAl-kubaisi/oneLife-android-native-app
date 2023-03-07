@@ -14,14 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     // test my connection
-        ParseObject firstObject = new  ParseObject("FirstClass");
-        firstObject.put("message","Hey ! First message from android. Parse is now connected");
-        firstObject.saveInBackground(e -> {
-            if (e != null){
-                Log.e("MainActivity", e.getLocalizedMessage());
-            }else{
-                Log.d("MainActivity","Object saved.");
+    //    ParseObject firstObject = new  ParseObject("FirstClass");
+    //    firstObject.put("message","Hey ! First message from android. Parse is now connected");
+    //    firstObject.saveInBackground(e -> {
+    //        if (e != null){
+    //            Log.e("MainActivity", e.getLocalizedMessage());
+    //        }else{
+    //            Log.d("MainActivity","Object saved.");
             }
-        });
-    }
-}
+        }
