@@ -4,4 +4,6 @@
     <string name="y_achse">Y-Achse</string>
     <string name="z_achse">Z-Achse</string>
     <string name="no_value">-</string>
+    <string name="YOUTUBE_API">AIzaSyCpHJIJMmfO6rDXXMEl-qDVKjcc-gqx7YQ</string>
+    <string name="Published">\Published: \</string>
 </resources>

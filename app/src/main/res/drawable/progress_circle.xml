@@ -5,6 +5,6 @@
     android:thickness="4dp"
     android:useLevel="true">
 
-    <solid android:color="@color/bottom_navigation_selector" />
+
 
 </shape>
