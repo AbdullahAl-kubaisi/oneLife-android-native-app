@@ -58,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.e(TAG, "Successful clickes");
 
-                Toast.makeText(SignupActivity.this, "Clicked on Button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignupActivity.this, "You have registered successfully", Toast.LENGTH_SHORT).show();
 
                 ParseUser user = new ParseUser();
                 user.setPassword(password.getText().toString());
@@ -91,7 +91,7 @@ public class SignupActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SignupActivity.this, "button clicked on back", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignupActivity.this, "clicked go back button", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(i);
                 Animatoo.INSTANCE.animateSwipeLeft(SignupActivity.this);
