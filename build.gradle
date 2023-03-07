@@ -1,5 +1,30 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id 'com.android.application' version '7.4.0' apply false
-    id 'com.android.library' version '7.4.0' apply false
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    appCompatVersion = '1.6.1'
+    designSupportVersion = '1.8.0'
+    recyclerViewVersion = '1.0.0'
 }
