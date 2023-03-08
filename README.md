@@ -8,6 +8,7 @@ Beschreibung der App: OneLife ist eine Fitness-Tracker-Mobile-App, die es den Nu
 1. Eine Kopie (fork) vom Projekt erstellen.
 2. Android Studio im Betrieb haben
 3. Tipp: Im Device Manager empfehle ich das Gerät Google Pixel 5. 
+4. Ein Konto erstellen und OneLife geniessen 
 
 ## Code Conventions
 Hier habe ich ein Plugin "protocol buffer linter" installiert und den Code manuel getestet. Um Sie Lint von Command line führen wollen:

@@ -2,6 +2,7 @@ package ch.zli.aa.onelife_fitnesstracker.adapters;
 /**
  * Hilfsmittel: https://www.youtube.com/watch?v=W4hTJybfU7s
  *
+ *
  * **/
 import android.content.Context;
 import android.content.Intent;

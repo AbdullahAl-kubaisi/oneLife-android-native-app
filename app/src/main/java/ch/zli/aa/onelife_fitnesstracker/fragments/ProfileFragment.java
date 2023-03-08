@@ -48,7 +48,6 @@ public class ProfileFragment extends Fragment {
         rvWorkouts = view.findViewById(R.id.rvWorkouts);
         btnLogout = view.findViewById(R.id.btnLogout);
         getCurrentUser();
-        // Logout button
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

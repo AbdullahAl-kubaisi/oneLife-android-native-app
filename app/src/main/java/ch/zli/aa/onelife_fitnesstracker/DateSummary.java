@@ -1,6 +1,7 @@
 package ch.zli.aa.onelife_fitnesstracker;
 /*
 * Hilfsmittel: https://developer.android.com/reference/android/icu/text/SimpleDateFormat
+*
 * */
 import java.text.SimpleDateFormat;
 import java.util.Date;
