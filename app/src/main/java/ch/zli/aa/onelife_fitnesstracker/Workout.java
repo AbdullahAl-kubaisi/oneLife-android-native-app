@@ -14,7 +14,7 @@ public class Workout extends ParseObject {
 
     public static final String KEY_START = "start";
     public static final String KEY_END = "end";
-    public static final String KEY_CALORIES = "calorie";
+    public static final String KEY_CALORIES = "calories";
     public static final String KEY_DURATION = "duration";
     public static final String KEY_WORKOUT_TYPE = "WorkoutType";
     public static final String KEY_CREATE_AT = "createdAt";

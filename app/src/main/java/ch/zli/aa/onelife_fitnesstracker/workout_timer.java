@@ -173,7 +173,7 @@ public class workout_timer extends FragmentActivity implements SensorEventListen
             running = true;
             start_stop.setText("Stop");
             start_stop.setBackgroundTintList(getResources().getColorStateList(R.color.pastelred));
-        }else if(running){  //stops the timer
+        }else if(running){
             chronometer.stop();
             pauseOffset = SystemClock.elapsedRealtime() - chronometer.getBase();
             running = false;
@@ -208,7 +208,7 @@ public class workout_timer extends FragmentActivity implements SensorEventListen
         }
 
         if(seconds == 0){
-            Toast.makeText(this, "Workout Not Started!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Workout does not Started!", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -238,7 +238,6 @@ public class workout_timer extends FragmentActivity implements SensorEventListen
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        // no need for this
     }
 
     private void configureLineDataSets() {

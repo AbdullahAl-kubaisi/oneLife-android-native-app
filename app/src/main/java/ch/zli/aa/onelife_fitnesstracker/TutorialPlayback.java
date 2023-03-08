@@ -46,6 +46,7 @@ public class TutorialPlayback extends YouTubeBaseActivity {
 
                 youTubePlayer.loadVideo(video_url);
 
+            }
 
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {

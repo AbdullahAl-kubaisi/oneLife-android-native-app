@@ -78,7 +78,7 @@ public class workout_summary extends FragmentActivity {
 
         workout.saveInBackground((e) ->{
             if(e != null){
-                Log.e(TAG, "ERROR WHILE SAVING");
+                Log.e(TAG, "ERROR BY SAVING");
             } else {
                 Log.i(TAG, "Save Success");
             }

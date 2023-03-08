@@ -1,9 +1,8 @@
 package ch.zli.aa.onelife_fitnesstracker.models_tutorials;
 
 import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 import org.parceler.Parcel;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 

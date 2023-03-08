@@ -1,20 +1,21 @@
 package ch.zli.aa.onelife_fitnesstracker.fragments;
 /*
-* Hilfsmittel: https://developer.android.com/guide/fragments
-* ChatGPT gefragt bei einer Fehlermeldung
-* Stackoverflow
-* */
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+ * Hilfsmittel: https://developer.android.com/guide/fragments
+ * ChatGPT gefragt bei einer Fehlermeldung
+ * Stackoverflow
+ * */
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -90,7 +91,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void getCurrentUser() {
-        // After login, Parse will cache it on disk, don't need to login every time we open it
+
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
         } else {
@@ -110,14 +111,14 @@ public class HomeFragment extends Fragment {
                 int min = 0;
                 int sec = 0;
                 if(e != null){
-                    Log.e(TAG, "Error populating workouts", e);
+                    Log.e(TAG, "Error with workout", e);
                     return;
                 }
                 for(Workout w: objects){
                     workout.add((String) w.get("WorkoutType"));
                     listTime.add((String) w.get("duration"));
                     indivCalo.add(String.valueOf(w.get("calories")));
-                    totalCal += ((Double) w.get("calories"));
+                    totalCal += w.getDouble("calories");
 
                     String temp = (String) w.get("duration");
                     Log.i(TAG, "duration: " + temp);

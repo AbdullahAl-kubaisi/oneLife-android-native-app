@@ -24,7 +24,7 @@
             android:buttonTint="@color/bottom_navigation_selector"
             android:checked="false"
             android:textSize="17sp"
-            tools:text="This is a test Text">
+            tools:text="This is a test">
 
         </CheckBox>
     </RelativeLayout>
