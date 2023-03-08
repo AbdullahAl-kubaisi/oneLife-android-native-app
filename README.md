@@ -17,4 +17,4 @@ Hier habe ich ein Plugin "protocol buffer linter" installiert und den Code manue
 Eine andere Möglichkeit vom Editor:
 1. Projet öffnen
 2. von menu bar, select Code > Inspect Code.
-3. Sie können das ganze Projekt oder z.B: Java Klassen auswählen und auf Ok klicken, dann kriegen Sie es.
+3. Sie können das ganze Projekt oder z.B: Java Klassen auswählen und auf Ok klicken, dann kriegen Sie es im Terminal.
