@@ -11,9 +11,11 @@ Beschreibung der App: OneLife ist eine Fitness-Tracker-Mobile-App, die es den Nu
 4. Ein Konto erstellen und OneLife geniessen 
 
 ## Code Conventions
-Hier habe ich ein Plugin "protocol buffer linter" installiert und den Code manuel getestet. Um Sie Lint von Command line führen wollen:
-1. Windows: gradlew lint
+Hier habe ich ein Plugin "protocol buffer linter" installiert und den Code manuel getestet. 
+Ausserdem habe ich im build.gradle die gewünschten Lint-Regeln konfiguriert, Um Sie Lint von Command line führen wollen:
+1. Windows: ./gradlew lint
 2. Linux or macOS: ./gradlew lint
+3. Die Ergebnisse werden im Textformat im Verzeichnis build/reports/lint-results.txt gespeichert.
 
 Eine andere Möglichkeit vom Editor:
 1. Projet öffnen

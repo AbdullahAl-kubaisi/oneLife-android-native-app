@@ -33,6 +33,26 @@ android {
             }
         }
     }
+    lintOptions {
+        // Hilfe von ChatGPT
+        abortOnError true
+        warningsAsErrors true
+        checkReleaseBuilds true
+        quiet true
+        ignoreWarnings true
+        textReport true
+        textOutput file("$project.buildDir/reports/lint-results.txt")
+
+        check("MethodNameLength", "max=30")
+
+        // Regel für englische Namensgebung
+        check 'NewApi', 'InlinedApi', 'JavadocMethod', 'DefaultLocale', 'JavaPerformance', 'ClassName', 'ConstantName', 'FieldName', 'LocalVariableName', 'MethodName', 'ParameterName'
+
+        check 'PublicMethodNaming', 'PublicVariableNaming'
+
+        check 'MethodNaming', 'VariableNaming'
+
+    }
 }
 
 dependencies {
